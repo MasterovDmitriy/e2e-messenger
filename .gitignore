@@ -17,3 +17,19 @@ dist/
 # IDE
 .idea/
 .vscode/
+
+# Local docs (keep only README.md in git)
+AGENT_SETUP.md
+DEBUG.md
+PROGRESS.md
+REVIEW.md
+SESSION_START.md
+TASK_01_project_bootstrap.md
+TASK_02_authentication_jwt.md
+TASK_03_user_search.md
+TASK_04_private_chats.md
+TASK_05_e2e_crypto_key_exchange.md
+TASK_06_realtime_messaging_ws.md
+TASK_07_message_history.md
+TASK_08_deploy_and_smoke_test.md
+cursorrules.md
