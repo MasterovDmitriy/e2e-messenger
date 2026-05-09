@@ -1,6 +1,7 @@
 import { FormEvent, useMemo, useState } from "react";
 
 import { login, me, register, type UserDto } from "../../api/auth";
+import { UserSearchPanel } from "../user-search/UserSearchPanel";
 
 type Mode = "register" | "login";
 
@@ -98,6 +99,7 @@ export function AuthPanel(): JSX.Element {
       {currentUser ? (
         <p style={{ marginBottom: 0, color: "#fcd34d" }}>Current user id: {currentUser.id}</p>
       ) : null}
+      {token ? <UserSearchPanel accessToken={token} /> : null}
     </section>
   );
 }
