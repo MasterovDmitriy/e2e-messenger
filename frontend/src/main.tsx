@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { AuthPanel } from "./features/auth/AuthPanel";
 
 const rootElement = document.getElementById("root");
 
@@ -21,8 +22,9 @@ createRoot(rootElement).render(
     >
       <h1 style={{ margin: 0, marginBottom: "1rem" }}>E2E Messenger</h1>
       <p style={{ margin: 0, color: "#94a3b8" }}>
-        Frontend bootstrap is ready. Next step: authentication flow.
+        Frontend bootstrap is ready. Authentication flow is available below.
       </p>
+      <AuthPanel />
     </div>
   </React.StrictMode>,
 );
